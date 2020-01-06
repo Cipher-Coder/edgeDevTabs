@@ -1,0 +1,36 @@
+{
+  "name": "Dev Tabs",
+  "manifest_version": 2,
+  "version": "2.1.5",
+  "author": "Mattaz",
+  "description": "New Tab extension for Web Developers, Full Stack Developers, Software Engineers, GitHub users, and more.",
+  "homepage_url": "https://mattaz.com/devTabs.html",
+  "options_page": "/src/options/options.html",
+  "browser_action": {
+    "default_icon": {
+      "32": "/src/img/icons/devTabs-32x32.png"
+    },
+    "default_title": "Dev Tabs",
+    "default_popup": "/src/popup/popup.html"
+  },
+  "icons": {
+    "16": "/src/img/icons/devTabs-16x16.png",
+    "32": "/src/img/icons/devTabs-32x32.png",
+    "48": "/src/img/icons/devTabs-48x48.png",
+    "128": "/src/img/icons/devTabs-128x128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "/src/override/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/", "https://twitter.com/*"],
+      "js": ["/src/js/inject.js"]
+    }
+  ],
+  "-ms-preload": {
+    "backgroundScript": "backgroundScriptsAPIBridge.js",
+    "contentScript": "contentScriptsAPIBridge.js"
+  },
+  "permissions": ["activeTab", "storage", "https://dev.to/api/articles"]
+}
