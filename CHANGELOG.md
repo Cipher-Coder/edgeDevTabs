@@ -13,6 +13,7 @@ Any notable changes and version notes will be kept in this file.
 - API call to Dev.to going stale not fetching the latest articles. Changed the query to fetch 'top' articles and after testing it for days, it seems to be doing much better.
 - Adjusted CSS for the list of Repo's so it no longer shows a scrollbar on smaller screens
 - Adjusted style on the buttons in the settings to better match overall style
+- Released this extension on Microsoft Edge Chrome Browser
 
 > No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
