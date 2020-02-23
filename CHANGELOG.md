@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## v2.1.6
+
+## Changes
+
+#### Minor fixes
+
+- Fixed console error when the Dev API returnes `null` for the `cover_image` of an article. Added `if` statement to check for `null` and if so `display:none` on the img field.
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.1.5
 
 ## Changes
