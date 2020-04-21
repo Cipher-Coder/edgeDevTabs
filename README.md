@@ -1,10 +1,10 @@
-[![GitHub license](https://img.shields.io/github/license/Cipher-Coder/devTabs.svg)](https://github.com/Cipher-Coder/devTabs/blob/master/LICENSE.txt) ![Mozilla Add-on](https://img.shields.io/amo/dw/dev-tabs)
+[![GitHub license](https://img.shields.io/github/license/Cipher-Coder/devTabs.svg)](https://github.com/Cipher-Coder/devTabs/blob/master/LICENSE.txt) [![Download for Edge](https://img.shields.io/badge/Download-Microsoft-blue)](https://microsoftedge.microsoft.com/addons/detail/mjnididbffjmpdccgmcbdmondlpafkef?hl=en-US)
 
 # Dev Tabs
 
-## Firefox extension for Developers - Replaces your 'New Tab' page in Firefox
-[Download From Mozilla Addons](https://addons.mozilla.org/en-US/firefox/addon/dev-tabs/)
+## Edge, Chrome, & Firefox browser extension for Developers - Replaces your 'New Tab' page
 
+[Download From Microsoft Edge addons](https://microsoftedge.microsoft.com/addons/detail/mjnididbffjmpdccgmcbdmondlpafkef?hl=en-US)
 
 ![Screenshot](/src/img/screenshot.png)
 
@@ -16,7 +16,7 @@ I used a library called [GithubFeed](https://github.com/samwx/GithubFeed), from 
 
 Once you open the extension for the first time, click the settings cog in the middle of the page. The first setting is the 'Github Feed'. If you just put your Github Username in the input and save it, when you go back to the main page it will automatically load your Feed on the right hand side of the screen.
 
-Once you save your username, it gets put into local storage and accessed from there. I debated on putting it into the chrome.sync.storage so that it gets sync'd across all instances of chrome, but ultimately decided to stick with local as it is not really hard to type it in. I also know that I have multiple Github accounts and may want to have one show up for my normal chrome instance and another username for my [Google Chrome Canary](https://www.google.com/chrome/canary/) instance. Just keep this in mind if you ever clear your local storage, you will have to input your usernames again. It is the same for the calendar. In fact all the storage in this extension is stored in local storage.
+Once you save your username, it gets put into local storage and accessed from there. I debated on putting it into the chrome.sync.storage so that it gets sync'd across all instances of chrome/Edge, but ultimately decided to stick with local as it is not really hard to type it in. I also know that I have multiple Github accounts and may want to have one show up for my normal chrome instance and another username for my [Google Chrome Canary](https://www.google.com/chrome/canary/) instance. Just keep this in mind if you ever clear your local storage, you will have to input your usernames again. It is the same for the calendar. In fact all the storage in this extension is stored in local storage.
 
 ### Github Calendar
 
@@ -46,10 +46,9 @@ This is just to display your current weather conditions. As I explained in the s
 
 ### QR Code Generator
 
-So many times I am in the middle of reading an article or watching a tutorial and I have to stop what I am doing and go do something else. This was the main inspiration behind this tool. I work from home and everyday, at 2:15pm, I have to stop what I am doing and go pick up my kids from school. I have to wait in line for usually around 30 mins, just sitting, with the car off. Now if I am in the middle of reading something, I can click the icon button in the toolbar and copy the url of whatever site I am on and create a QR Code that I can scan with my phone and take with me. Then while waiting to pick the kids up, I can continue to read what ever it was I was working on. 
+So many times I am in the middle of reading an article or watching a tutorial and I have to stop what I am doing and go do something else. This was the main inspiration behind this tool. I work from home and everyday, at 2:15pm, I have to stop what I am doing and go pick up my kids from school. I have to wait in line for usually around 30 mins, just sitting, with the car off. Now if I am in the middle of reading something, I can click the icon button in the toolbar and copy the url of whatever site I am on and create a QR Code that I can scan with my phone and take with me. Then while waiting to pick the kids up, I can continue to read what ever it was I was working on.
 
 ![Screenshot](/src/img/screenshot2.png)
-
 
 ## Location and Tracking
 
