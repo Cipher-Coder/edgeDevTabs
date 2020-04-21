@@ -8,7 +8,19 @@ Any notable changes and version notes will be kept in this file.
 
 #### Minor fixes
 
-- Fixed console error when the Dev API returnes `null` for the `cover_image` of an article. Added `if` statement to check for `null` and if so `display:none` on the img field.
+- Fixed console error when the Dev API returns `null` for the `cover_image` of an article. Added `if` statement to check for `null` and if so `display:none` on the img field.
+
+- Basic Refactoring
+
+- Added a '-' and '+' switch on 'add single bookmark'. So when user clicks to add a bookmark a '-' will appear signaling to user to click again to get back to original state.
+
+- Fixed chrome.storage.removeItem to just chrome.storage.remove, so when you navigate to the settings page and try to delete all bookmarks saved on the left of the screen... now it actually works.
+
+- Changed the font color of the 'save' button on the place where you add a single bookmark.
+
+- Fixed Dev.to article by-line - problem was: if there was no twitter_username returned with the article object, the entire article was omitted. I fixed it so if there is no twitter_username, it will now display and link to the Dev.to username. 
+
+- Refactored and fixed the bookmark input section. [Marked.js](https://marked.js.org) no longer sanitized markdown. I was able to use the DOMpurify library that was being used elsewhere and refactored the code appropriately. 
 
 > No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
