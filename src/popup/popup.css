@@ -1,12 +1,12 @@
 html {
   background-color: rgb(211, 207, 207);
-  font-family: Helvetica, "Ubuntu", Arial, sans-serif;
-  width: 500px;
+  font-family: Helvetica, 'Ubuntu', Arial, sans-serif;
   height: auto;
 }
 
 h1 {
   font-size: 2em;
+  margin-top: -5px;
 }
 
 a {
@@ -17,10 +17,6 @@ a {
 a:hover {
   transition: all 0.2s ease-in;
   color: #081163;
-}
-
-#mainPopup {
-  padding: 10px;
 }
 
 button {
@@ -35,10 +31,51 @@ button:hover {
   cursor: pointer;
 }
 
+#mainPopup {
+  padding: 10px;
+}
+
+.divider {
+  margin-bottom: -10px;
+}
+
+.second-divider {
+  margin-top: 80px;
+}
+
 #displayQR {
-  text-align: center;
+  text-align: left;
 }
 
 #qr-input {
-  text-align: center;
+  text-align: left;
+}
+
+.divider {
+  margin-top: -5px;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content {
+  position: absolute;
+  font-size: 0.85rem;
+}
+
+.menu-content a {
+  text-decoration: none;
+  display: block;
+  padding-bottom: 4px;
+  color: #000000;
+}
+
+.menu-content a:hover {
+  color: #ff6600;
+}
+
+.qr {
+  margin-top: 58px;
 }
