@@ -2,6 +2,19 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## v2.1.7
+
+## Changes
+
+### DOMPurify
+
+- Upgraded the sanitization lib included. DOMPurify has been upgraded due to a vulnerability.
+- Adjusted CSS on Override page to make it slightly more responsive on smaller screens < 1300px
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.1.6
 
 ## Changes
@@ -18,9 +31,9 @@ Any notable changes and version notes will be kept in this file.
 
 - Changed the font color of the 'save' button on the place where you add a single bookmark.
 
-- Fixed Dev.to article by-line - problem was: if there was no twitter_username returned with the article object, the entire article was omitted. I fixed it so if there is no twitter_username, it will now display and link to the Dev.to username. 
+- Fixed Dev.to article by-line - problem was: if there was no twitter_username returned with the article object, the entire article was omitted. I fixed it so if there is no twitter_username, it will now display and link to the Dev.to username.
 
-- Refactored and fixed the bookmark input section. [Marked.js](https://marked.js.org) no longer sanitized markdown. I was able to use the DOMpurify library that was being used elsewhere and refactored the code appropriately. 
+- Refactored and fixed the bookmark input section. [Marked.js](https://marked.js.org) no longer sanitized markdown. I was able to use the DOMpurify library that was being used elsewhere and refactored the code appropriately.
 
 > No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
@@ -201,7 +214,7 @@ Trying to get the [DEV](https://dev.to) feed to show up next to the [Twitter](ht
 
 The [DEV](https://dev.to) feed is not showing up when on [Twitter](https://twitter.com)
 
-- Updated permissions to include http://&#42;/ and https://&#42;/ - This was causing the DEV news feed on Twitter not to work. Once these permissions were added in, everything worked again.
+- Updated permissions to include http://\*/ and https://\*/ - This was causing the DEV news feed on Twitter not to work. Once these permissions were added in, everything worked again.
 
 > No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
