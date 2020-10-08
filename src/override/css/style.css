@@ -278,6 +278,7 @@ li a:hover {
 }
 
 #options {
+  margin-right: 30px;
   -webkit-filter: brightness(70%);
   -moz-filter: brightness(70%);
   -o-filter: brightness(70%);
@@ -355,6 +356,7 @@ li a:hover {
 }
 
 #addIcon {
+  margin-top: -15px;
   color: orangered;
   font-size: 2rem;
   background: none;
@@ -380,6 +382,7 @@ li a:hover {
   color: orangered;
   cursor: pointer;
   margin-top: -5px;
+  margin-left: 60px;
   -webkit-filter: brightness(70%);
   -moz-filter: brightness(70%);
   -o-filter: brightness(70%);
