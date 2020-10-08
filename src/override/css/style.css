@@ -355,6 +355,12 @@ li a:hover {
   padding-right: 1rem;
 }
 
+@media (max-width: 1300px) {
+  #bookmarkList li {
+    font-size: 0.7rem;
+  }
+}
+
 #addIcon {
   margin-top: -15px;
   color: orangered;
