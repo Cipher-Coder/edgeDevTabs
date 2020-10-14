@@ -278,7 +278,6 @@ li a:hover {
 }
 
 #options {
-  margin-right: 30px;
   -webkit-filter: brightness(70%);
   -moz-filter: brightness(70%);
   -o-filter: brightness(70%);
@@ -362,7 +361,7 @@ li a:hover {
 }
 
 #addIcon {
-  margin-top: -15px;
+  margin-top: 5px;
   color: orangered;
   font-size: 2rem;
   background: none;
@@ -388,7 +387,6 @@ li a:hover {
   color: orangered;
   cursor: pointer;
   margin-top: -5px;
-  margin-left: 60px;
   -webkit-filter: brightness(70%);
   -moz-filter: brightness(70%);
   -o-filter: brightness(70%);
@@ -458,4 +456,18 @@ label {
 
 #bmList li {
   margin-left: -5px;
+}
+
+.singleInput {
+  display: inline-block;
+}
+
+.options-settings {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.add-bookmark-button {
+  display: inline-block;
+  margin-left: 7px;
 }
