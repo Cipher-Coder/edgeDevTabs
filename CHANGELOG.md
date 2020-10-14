@@ -8,8 +8,9 @@ Any notable changes and version notes will be kept in this file.
 
 ### DOMPurify
 
-- Upgraded the sanitization lib included. DOMPurify has been upgraded due to a vulnerability.
-- Adjusted CSS on Override page to make it slightly more responsive on smaller screens < 1300px
+- Upgraded the sanitization lib included. DOMPurify has been upgraded to latest version due to a vulnerability.
+- Adjusted CSS on Main page to make it slightly more responsive on smaller screens < 1300px
+- Moved the "add single bookmark" button up and side by side with options button so it would work on MacBook Pro - < 1300px screen
 
 > No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
