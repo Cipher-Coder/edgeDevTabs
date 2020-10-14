@@ -471,3 +471,9 @@ label {
   display: inline-block;
   margin-left: 7px;
 }
+
+@media (max-width: 1300px) {
+  .singleInput {
+    margin-top: -15px;
+  }
+}
