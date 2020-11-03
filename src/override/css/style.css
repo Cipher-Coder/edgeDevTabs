@@ -1,3 +1,11 @@
+:root {
+  --color-calendar-graph-day-bg: #dddbdb;
+  --color-calendar-graph-day-L1-bg: #39dd34;
+  --color-calendar-graph-day-L2-bg: #45a045;
+  --color-calendar-graph-day-L3-bg: #047526;
+  --color-calendar-graph-day-L4-bg: #0a4208;
+}
+
 html {
   background-color: #252730;
   font-family: monospace;
@@ -10,7 +18,6 @@ html {
   font-family: Helvetica, arial, serif;
   border: 1px solid #39dd34;
   border-radius: 3px;
-  /* min-height: 243px; */
   text-align: center;
   margin: 0 auto;
   padding: 5px;
@@ -277,22 +284,6 @@ li a:hover {
   display: none;
 }
 
-#options {
-  -webkit-filter: brightness(70%);
-  -moz-filter: brightness(70%);
-  -o-filter: brightness(70%);
-  -ms-filter: brightness(70%);
-  filter: brightness(70%);
-}
-
-#options:hover {
-  -webkit-filter: brightness(100%);
-  -moz-filter: brightness(100%);
-  -o-filter: brightness(100%);
-  -ms-filter: brightness(100%);
-  filter: brightness(100%);
-}
-
 #devStart a:hover {
   color: greenyellow;
 }
@@ -402,7 +393,6 @@ li a:hover {
   cursor: pointer;
   margin-top: 9px;
   border: 1px solid #455259;
-  background: #46535c;
   background: -webkit-gradient(
     linear,
     left top,
@@ -414,6 +404,7 @@ li a:hover {
   background: -moz-linear-gradient(top, #a1a1a1, #46535c);
   background: -ms-linear-gradient(top, #a1a1a1, #46535c);
   background: -o-linear-gradient(top, #a1a1a1, #46535c);
+  background: #46535c;
   padding: 5px 10px;
   -webkit-border-radius: 11px;
   -moz-border-radius: 11px;
@@ -460,11 +451,6 @@ label {
 
 .singleInput {
   display: inline-block;
-}
-
-.options-settings {
-  display: inline-block;
-  margin-right: 7px;
 }
 
 .add-bookmark-button {

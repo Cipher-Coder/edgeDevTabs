@@ -2,6 +2,21 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.2.0
+
+## Changes
+
+### HOTFIX: Github calendar not working
+
+- Github Calendar stopped working. Github changed the way they rendered the graph SVG. Added CSS vars so the days would render the way they should and got the streak back.
+- Moved the settings button into the popup menu. Got rid of the extra code for that.
+- Added some style to the Popup menu
+- Updated DOMPurify again.
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.1.7
 
 ## Changes

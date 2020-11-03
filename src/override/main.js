@@ -313,11 +313,11 @@ function addEntry() {
 function clearInput() {
   document.getElementById('urlName').value = '';
   document.getElementById('siteUrl').value = '';
-  document.location.reload(true);
+  document.location.forceReload(true);
 }
 
 window.onpageshow = function (event) {
   if (event.persisted) {
-    document.location.reload(true);
+    document.location.forceReload(true);
   }
 };

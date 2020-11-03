@@ -12,29 +12,36 @@
         <hr class="divider" />
       </div>
       <div class="menu">
-        <p class="menu-content">
-          <a id="goto-options" href="">Options</a>
-          <a
-            href="https://github.com/Cipher-Coder/chromeExtension"
-            target="_blank"
-            >Github</a
-          >
-          <a href="https://mattaz.com/devtabs/" target="_blank">DevTabs</a>
-        </p>
+        <ul class="menu-content">
+          <li class="menu-list-item">
+            <a id="goto-options" href="">Options</a>
+          </li>
+          <li class="menu-list-item">
+            <a
+              href="https://github.com/Cipher-Coder/chromeExtension"
+              target="_blank"
+              >Github</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="https://mattaz.com/devtabs/" target="_blank">DevTabs</a>
+          </li>
+        </ul>
       </div>
 
       <div class="qr">
         <hr class="second-divider" />
         <h3>QR Code Generator</h3>
-        <p>
-          Copy a url, and paste it into the input box.
-        </p>
+        <p>Copy a url, and paste it into the input box.</p>
         <div id="qr-input">
           <label for="userURL">URL: </label><br /><input
+            class="qr-input"
             id="userURL"
             size="45"
           /><br />
-          <button id="getURL">Get QR Code</button>
+          <button class="btn paper raise-flatten" id="getURL">
+            Get QR Code
+          </button>
         </div>
       </div>
       <div id="displayQR"></div>
