@@ -35,7 +35,10 @@ chrome.storage.local.get(['gitCalName'], function (result) {
     calStart.textContent = 'Please go to settings and configure your username!';
   } else {
     let calendarName = result.gitCalName;
-    new GitHubCalendar('.calendar', calendarName, { responsive: true });
+    new GitHubCalendar('.calendar', calendarName, {
+      responsive: true,
+      cache: 900,
+    });
   }
 });
 
