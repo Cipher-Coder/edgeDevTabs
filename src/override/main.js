@@ -37,7 +37,7 @@ chrome.storage.local.get(['gitCalName'], function (result) {
     let calendarName = result.gitCalName;
     new GitHubCalendar('.calendar', calendarName, {
       responsive: true,
-      cache: 900,
+      global_stats: true,
     });
   }
 });
