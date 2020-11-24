@@ -8,7 +8,7 @@ Any notable changes and version notes will be kept in this file.
 
 ### Cache
 
-- Adjusted cache for GitHub Calendar. Just took it out so when you commit something to GitHub it will show in the graph immediately.
+- Adjusted cache for GitHub Calendar. Just took it out so when you commit something to GitHub it will show in the graph immediately. If the userbase increase a lot, I may have to re-impliment it. But for now, there are not enough users to have to cache the info.
 
 > No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
