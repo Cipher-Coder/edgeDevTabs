@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.2.2
+
+## Changes
+
+### Fixed github rendering graph... again
+
+- Adjusted for GitHub changing their graph rendering.
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## 2.2.1
 
 ## Changes
