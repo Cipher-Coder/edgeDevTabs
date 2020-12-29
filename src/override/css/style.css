@@ -348,6 +348,7 @@ li a:hover {
 @media (max-width: 1300px) {
   #bookmarkList li {
     font-size: 0.7rem;
+    margin-left: -12px;
   }
 }
 
