@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.2.3
+
+## Changes
+
+### Fixed GitHub Contributiions Graph... again
+
+- GitHub's contributions graph on the public facing website, is an SVG. This is where I get your contributions info from to reconstruct that graph as well as do the math on the streaks and other info. However, they keep changing the SVG and how it is rendered and the classNames used as well as the attributes used to create it. I am using a Library to parse this info and I finally forked it and made appropriate changes so that hopefully this will not happen again.
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## 2.2.2
 
 ## Changes
