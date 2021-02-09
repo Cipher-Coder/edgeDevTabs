@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.2.4
+
+## Changes
+
+### Current Streak was not working
+
+- Fixed the current streak that was still not working.
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## 2.2.3
 
 ## Changes

@@ -629,19 +629,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                         return lastWeek.length && data.weeks.push(lastWeek) && (lastWeek = []);
                     }
 
-                    var fill = c.match(/fill="(#[a-z0-9]+)"/),
+                    var level = c.match(/data-level="([0-9\-]+)"/i),
                         date = c.match(/data-date="([0-9\-]+)"/),
-                        count = c.match(/data-count="([0-9]+)"/),
-                        level = null;
-                    fill = fill && fill[1];
+                        count = c.match(/data-count="([0-9]+)"/);
+                    level = level && level[1];
                     date = date && date[1];
                     count = count && +count[1];
 
+                    if (!level) {
+                        return;
+                    }
+
                     var obj = {
-                        fill: fill,
                         date: new Date(date),
                         count: count,
-                        level: githubCalendarLegend.indexOf(fill)
+                        level: level
                     };
 
                     if (data.current_streak === 0) {
