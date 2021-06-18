@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## v2.2.6
+
+## Changes
+
+#### Changed Onboarding with added link to settings
+
+- Changed wording and made the warning to setup settings to a link instead of directing them to settings. Referencing this [Issue](https://github.com/Cipher-Coder/chromeExtension/issues/1) from the Chrome version.
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.2.5
 
 ## Changes
