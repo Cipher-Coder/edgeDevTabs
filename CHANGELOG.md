@@ -2,15 +2,17 @@
 
 Any notable changes and version notes will be kept in this file.
 
-## v2.2.6
+## v2.3.0
 
 ## Changes
 
 #### Changed Onboarding with added link to settings
 
 - Changed wording and made the warning to setup settings to a link instead of directing them to settings. Referencing this [Issue](https://github.com/Cipher-Coder/chromeExtension/issues/1) from the Chrome version.
+- Added a Cache for the Github Graph - Too many requests are being sent. Sometimes a single person is aquiring a new tab > 20 times an hour. Since my self-hosted proxy is hosted on GCP the cost is increasing exponentially. Right now, it is set to cache the data for one hour. However, if this does not bring the cost back down to a managable range I will have to increase the time.
+- Deleted the two Bridge JS files. They were not needed.
 
-> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+> No other libs added. backgroundScriptsAPIBridge.js & contentScriptsAPIBridge.js libs were removed. The list of libs is at the end of this changelog.
 
 &nbsp;
 

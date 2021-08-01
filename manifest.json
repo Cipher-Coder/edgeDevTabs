@@ -1,7 +1,7 @@
 {
   "name": "Dev Tabs",
   "manifest_version": 2,
-  "version": "2.2.6",
+  "version": "2.3.0",
   "author": "Mattaz",
   "description": "New Tab extension for Web Developers, Full Stack Developers, Software Engineers, GitHub users, and more.",
   "homepage_url": "https://mattaz.com/devTabs/",
@@ -28,9 +28,5 @@
       "js": ["/src/js/inject.js"]
     }
   ],
-  "-ms-preload": {
-    "backgroundScript": "backgroundScriptsAPIBridge.js",
-    "contentScript": "contentScriptsAPIBridge.js"
-  },
   "permissions": ["activeTab", "storage", "https://dev.to/api/articles"]
 }
