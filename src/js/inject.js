@@ -36,17 +36,11 @@ function insertAfter(newNode, referenceNode) {
 
 function twitterLink(item) {
   if (!item.user.twitter_username) return ''
-  return (
-    '&nbsp; (<a style="display:inline;color:rgba(29, 161, 242, .8);" href="https://twitter.com/' +
-    item.user.twitter_username +
-    '">@' +
-    item.user.twitter_username +
-    '</a>)'
-  )
+  return `<a style="display:inline;color:rgba(29, 161, 242, .8);" href="https://twitter.com/${item.user.twitter_username}">@${item.user.twitter_username}</a>`
 }
 
-function listHTML(clean) {
-  return clean
+function listHTML(data) {
+  return data
     .slice(0, 11)
     .map(function (item) {
       return linkItemHTML(item)
@@ -55,37 +49,31 @@ function listHTML(clean) {
 }
 
 function linkItemHTML(item) {
-  return (
-    '<li class="css-1dbjc4n r-1igl3o0 r-qklmqi r-1adg3ll r-1ny4l3l">\
-					<a target="_blank" class="r-111h2gw" style="text-decoration: none; color: #fff;" href="' +
-    item.url +
-    '">\
-					<span class="css-901oao r-1fmj7o5 r-1qd0xha r-a023e6 r-b88u0q r-rjixqe r-hrzydr r-bcqeeo" dir="ltr">' +
-    item.title +
-    '</span>\
-					</a>\
-					<div class="trend-item"></div>\
-					<div class="css-901oao" style="color: rgba(29, 161, 242, 1)">\
-						' +
-    item.user.name +
-    twitterLink(item) +
-    '\
-					</div>\
-					</li>'
-  )
+  return `<li class="css-1dbjc4n r-1igl3o0 r-qklmqi r-1adg3ll r-1ny4l3l  r-1f1sjgu r-ymttw5">
+					<a target="_blank" class="r-111h2gw" style="text-decoration: none; color: #fff;" href="${
+            item.url
+          }">
+					<span class="css-901oao r-1fmj7o5 r-1qd0xha r-a023e6 r-b88u0q r-rjixqe r-hrzydr r-bcqeeo" dir="ltr">${
+            item.title
+          }</span>
+					</a>
+					<div class="trend-item"></div>
+					<div class="css-901oao" style="color: rgba(29, 161, 242, 1)">${
+            item.user.name
+          }\u00A0${twitterLink(item)}</div>
+					</li>`
 }
 
 function trendsHTML(listItems) {
-  return (
-    '<div class="css-1dbjc4n trend-mod">\
-					<div class="css-1dbjc4n trends-inner"><div class="r-1dbjc4n">\
-				  <div class="css-1dbjc4n r-1igl3o0 r-qklmqi r-1adg3ll r-1ny4l3l flex-module-header">\
-				  <div class="css-1dbjc4n r-1wtj0ep r-ymttw5 r-1f1sjgu"><h2 class="css-4rbku5 css-1dbjc4n r-18u37iz"  style="color: #fff; font-size: 1.5rem; font-weight: 800;">dev.to</h2></div>\
-				  </div>\
-				  <div class="flex-module-inner">\
-					<ul class="css-901oao r-1fmj7o5 r-1qd0xha r-a023e6 r-b88u0q r-rjixqe r-hrzydr r-bcqeeo r-qvutc0" style="list-style-type: none;" id="dev-to-trends">\
-					' +
-    listItems +
-    '</ul></div></div></div>'
-  )
+  return `<div class="css-1dbjc4n trend-mod">
+					<div class="css-1dbjc4n trends-inner">
+          <div class="r-1dbjc4n">
+				  <div class="css-1dbjc4n r-1igl3o0 r-qklmqi r-1adg3ll r-1ny4l3l flex-module-header">
+				  <div class="css-1dbjc4n r-1wtj0ep r-ymttw5 r-1f1sjgu">
+          <h2 class="css-4rbku5 css-1dbjc4n r-18u37iz"  style="color: #fff; font-size: 1.5rem; font-weight: 800;">dev.to</h2>
+          </div>
+				  </div>
+				  <div class="flex-module-inner">
+					<ul class="list-item css-1dbjc4n" style="list-style-type: none;" id="dev-to-trends">${listItems}</ul>
+					</div></div></div>`
 }
