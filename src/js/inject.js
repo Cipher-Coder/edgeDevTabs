@@ -1,4 +1,4 @@
-var links = null
+let links = null
 
 fetch('https://dev.to/api/articles')
   .then(function (response) {
@@ -11,23 +11,25 @@ fetch('https://dev.to/api/articles')
     console.log(err)
   })
 
-setInterval(function () {
+let intervalId = setInterval(function () {
   if (links) {
     insertLinks(links)
   }
 }, 50)
 
 function insertLinks(data) {
-  var trendsBox = document.getElementsByClassName(
+  let trendsBox = document.getElementsByClassName(
     'css-1dbjc4n r-1ysxnx4 r-k0dy70 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x'
   )[0]
-  var devBox = document.getElementById('dev-to-trends')
+  if (!trendsBox) return
+  let devBox = document.getElementById('dev-to-trends')
   if (!trendsBox || devBox) return
-  var newItem = document.createElement('DIV')
+  let newItem = document.createElement('DIV')
   newItem.className =
     'css-1dbjc4n r-1ysxnx4 r-k0dy70 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x'
   newItem.innerHTML = trendsHTML(listHTML(data))
   insertAfter(newItem, trendsBox)
+  clearInterval(intervalId)
 }
 
 function insertAfter(newNode, referenceNode) {
